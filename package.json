@@ -4,6 +4,7 @@
   "description": "Open the project in Jetbrains by Alfred",
   "license": "MIT",
   "repository": "gp0119/alfred-open-in-jetbrains",
+  "type": "module",
   "author": {
     "name": "ganpeng",
     "email": "190875565@qq.com",
@@ -28,7 +29,8 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^1.1.0"
+    "alfy": "^1.1.0",
+    "fast-glob": "^3.3.1"
   },
   "devDependencies": {
     "alfy-test": "^0.4.2",
