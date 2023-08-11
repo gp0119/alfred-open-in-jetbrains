@@ -8,11 +8,67 @@
 	<string>Uncategorised</string>
 	<key>connections</key>
 	<dict>
+		<key>4854F991-D75F-4909-9C21-A5A3BE5EAFA3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>DA935912-8CC2-43C8-BA7B-7EFE1AC40A66</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AC150D46-CE3D-4994-B14B-BF72C40C2DA8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C0FB8013-AE26-4C5F-ADB7-414B8E5FA166</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CC11B001-3AB9-4A8E-B66B-49B57F9969AE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1359A296-CA4C-4913-B2A0-2D01B51F9ED0</string>
+				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>29767A2E-4E6C-4850-9261-2CA49C8724B2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -31,6 +87,34 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>path</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>~/Applications/WebStorm.app</string>
+				<key>sourcefile</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>29767A2E-4E6C-4850-9261-2CA49C8724B2</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -40,11 +124,11 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>{var:webstorm_keyword}</string>
+				<string>{var:ws_keyword}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -64,7 +148,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Open the project in Jetbrains by Alfred</string>
+				<string>Open the project in Webstorm</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -80,42 +164,184 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
+				<key>openwith</key>
+				<string>~/Applications/Fleet.app</string>
+				<key>sourcefile</key>
 				<string>{query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>1359A296-CA4C-4913-B2A0-2D01B51F9ED0</string>
+			<string>C0FB8013-AE26-4C5F-ADB7-414B8E5FA166</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:fleet_keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open the project in Fleet</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AC150D46-CE3D-4994-B14B-BF72C40C2DA8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>~/Applications/IntelliJ IDEA Community Edition.app</string>
+				<key>sourcefile</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>DA935912-8CC2-43C8-BA7B-7EFE1AC40A66</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:idea_keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open the project in Idea</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4854F991-D75F-4909-9C21-A5A3BE5EAFA3</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>1359A296-CA4C-4913-B2A0-2D01B51F9ED0</key>
+		<key>29767A2E-4E6C-4850-9261-2CA49C8724B2</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>725</real>
 			<key>ypos</key>
-			<real>160</real>
+			<real>225</real>
+		</dict>
+		<key>4854F991-D75F-4909-9C21-A5A3BE5EAFA3</key>
+		<dict>
+			<key>xpos</key>
+			<real>100</real>
+			<key>ypos</key>
+			<real>495</real>
+		</dict>
+		<key>AC150D46-CE3D-4994-B14B-BF72C40C2DA8</key>
+		<dict>
+			<key>xpos</key>
+			<real>100</real>
+			<key>ypos</key>
+			<real>355</real>
+		</dict>
+		<key>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</key>
+		<dict>
+			<key>xpos</key>
+			<real>725</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+		<key>C0FB8013-AE26-4C5F-ADB7-414B8E5FA166</key>
+		<dict>
+			<key>xpos</key>
+			<real>725</real>
+			<key>ypos</key>
+			<real>350</real>
 		</dict>
 		<key>CC11B001-3AB9-4A8E-B66B-49B57F9969AE</key>
 		<dict>
 			<key>xpos</key>
-			<real>75</real>
+			<real>100</real>
 			<key>ypos</key>
-			<real>160</real>
+			<real>225</real>
+		</dict>
+		<key>DA935912-8CC2-43C8-BA7B-7EFE1AC40A66</key>
+		<dict>
+			<key>xpos</key>
+			<real>725</real>
+			<key>ypos</key>
+			<real>490</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -133,13 +359,34 @@
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>e.g.  /user/xx/xx,/user/yy/yy</string>
+			<string>e.g.  ~/xxx,~/yyy</string>
 			<key>label</key>
 			<string>Working Directories</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
 			<string>dirs</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>exclude dirs</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>exclude</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -160,7 +407,7 @@
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
-			<string>webstorm_keyword</string>
+			<string>ws_keyword</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -198,11 +445,74 @@
 			<key>description</key>
 			<string></string>
 			<key>label</key>
-			<string>IntelliJIdea keyword</string>
+			<string>Idea keyword</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
 			<string>idea_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>go</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>GoLand keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>go_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>py</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>PyCharm keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>py_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>php</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>PhpStorm keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>php_keyword</string>
 		</dict>
 	</array>
 	<key>version</key>

@@ -1,18 +1,21 @@
 "use strict";
-// import alfy from "alfy";
+import alfy from "alfy";
 import glob from "fast-glob";
 import os from "os";
 import * as path from "path";
+import Fuse from "fuse.js";
 
-// const workingDirs = process.env.dirs
-// 	.split(",")
-// 	.map((p) => (p.startsWith("~") ? path.join(os.homedir(), p.slice(1)) : p));
+const query = alfy.input;
+const keyword = process.env.alfred_workflow_keyword || "ws";
 
-const dirs = "~/learn/, ~/learn/*";
-const exclude = "~/learn/learn-ts/**";
+// const dirs = "~zcckj,~/study";
+// const exclude = "~/learn/learn-ts/**";
+//
+// const workingDirs = getFloderPathByString(dirs);x
+// const excludeDirs = getFloderPathByString(exclude);
 
-const workingDirs = getFloderPathByString(dirs);
-const excludeDirs = getFloderPathByString(exclude);
+const workingDirs = getFloderPathByString(process.env.dirs || "");
+const excludeDirs = getFloderPathByString(process.env.exclude || "");
 
 function getFloderPathByString(str) {
 	return str.split(",").map((floderPath) => {
@@ -23,39 +26,22 @@ function getFloderPathByString(str) {
 	});
 }
 
-console.log("workingDirs: ", workingDirs);
-
-function getWorkingDirs() {
-	return workingDirs
+function getWorkingDirs(dirs, exclude) {
+	return dirs
 		.map((wd) => {
 			return glob.sync(wd, {
 				cwd: "/",
 				onlyDirectories: true,
 				deep: 1,
-				ignore: excludeDirs,
+				ignore: exclude,
 			});
 		})
 		.flat();
 }
 
-console.log(getWorkingDirs());
-
-// function getProjects() {
-// 	return wds
-// 		.map((wd) =>
-// 			glob.sync("*", {
-// 				cwd: wd,
-// 				onlyDirectories: true,
-// 				deep: 1,
-// 				absolute: true,
-// 			}),
-// 		)
-// 		.flat();
-// }
-
 function updateProjects() {
-	const workingDirs = getWorkingDirs();
-	return workingDirs
+	const wds = getWorkingDirs(workingDirs, excludeDirs);
+	const projects = wds
 		.map((wd) => {
 			const names = glob.sync("*", {
 				cwd: wd,
@@ -77,15 +63,54 @@ function updateProjects() {
 			],
 			[],
 		);
+	alfy.cache.set("projects", projects);
+	return projects;
+}
+function generateIconMap() {
+	const {
+		ws_keyword,
+		idea_keyword,
+		fleet_keyword,
+		go_keyword,
+		php_keyword,
+		py_keyword,
+	} = process.env;
+	const map = {
+		[ws_keyword]: "webstorm",
+		[idea_keyword]: "idea",
+		[fleet_keyword]: "fleet",
+		[go_keyword]: "goland",
+		[php_keyword]: "phpstorm",
+		[py_keyword]: "pycharm",
+	};
+	alfy.cache.set("iconMap", map);
+}
+function output() {
+	const projects = alfy.cache.get("projects") || [];
+	const iconMap = alfy.cache.get("iconMap") || {};
+	const fuse = new Fuse(projects, {
+		threshold: 0.4,
+		keys: ["name"],
+	});
+	let matches = projects;
+	if (query) {
+		matches = fuse.search(query).map((item) => item.item);
+	}
+	const items = matches.map((item) => {
+		const absolutePath = path.join(item.wd, item.name);
+		return {
+			uid: absolutePath,
+			title: item.name,
+			subtitle: absolutePath,
+			arg: absolutePath,
+			icon: {
+				path: `./${iconMap[keyword]}.png`,
+			},
+		};
+	});
+	alfy.output(items, { rerunInterval: 1 });
+	updateProjects();
+	generateIconMap();
 }
 
-console.log(updateProjects());
-
-// const projects = getProjects();
-// console.log("projects: ", projects);
-
-// alfy.output([
-// 	{
-// 		title: "Open Alfred Preferences",
-// 	},
-// ]);
+output();
