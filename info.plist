@@ -315,21 +315,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string>/Applications/Visual Studio Code.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>A11F5058-6C0D-4452-9D88-D0408023F216</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -376,6 +361,21 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>A11F5058-6C0D-4452-9D88-D0408023F216</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -398,9 +398,9 @@
 		<key>A11F5058-6C0D-4452-9D88-D0408023F216</key>
 		<dict>
 			<key>xpos</key>
-			<real>715</real>
+			<real>725</real>
 			<key>ypos</key>
-			<real>635</real>
+			<real>645</real>
 		</dict>
 		<key>AC150D46-CE3D-4994-B14B-BF72C40C2DA8</key>
 		<dict>
