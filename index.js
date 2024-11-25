@@ -74,6 +74,9 @@ function generateIconMap() {
 		go_keyword,
 		php_keyword,
 		py_keyword,
+		rust_keyword,
+		clion_keyword,
+		rider_keyword,
 		vscode_keyword,
 	} = process.env;
 	const map = {
@@ -83,6 +86,9 @@ function generateIconMap() {
 		[go_keyword]: "goland",
 		[php_keyword]: "phpstorm",
 		[py_keyword]: "pycharm",
+		[rust_keyword]: "rust",
+		[clion_keyword]: "clion",
+		[rider_keyword]: "rider",
 		[vscode_keyword]: "vscode",
 	};
 	alfy.cache.set("iconMap", map);
