@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.gp0119.open-in-jetbrains</string>
+	<string>com.gp0119.open-by-alfred</string>
 	<key>category</key>
 	<string>Uncategorised</string>
 	<key>connections</key>
@@ -101,10 +101,14 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string>gp0119</string>
+	<key>description</key>
+	<string>Open the project in Jetbrains or VSCode by Alfred</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>open-in-jetbrains</string>
+	<string>open-by-alfred</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -637,7 +641,11 @@
 			<string>vscode_keyword</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string></string>
+	<key>webaddress</key>
+	<string>https://github.com/gp0119/open-by-alfred</string>
 </dict>
 </plist>

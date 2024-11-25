@@ -106,7 +106,7 @@ function output() {
 			subtitle: absolutePath,
 			arg: absolutePath,
 			icon: {
-				path: `./${iconMap[keyword]}.png`,
+				path: `./images/${iconMap[keyword]}.png`,
 			},
 		};
 	});

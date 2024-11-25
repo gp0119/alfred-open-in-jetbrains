@@ -1,7 +1,7 @@
 {
   "name": "open-by-alfred",
   "version": "1.0.0",
-  "description": "Open the project in Jetbrains by Alfred",
+  "description": "Open the project in Jetbrains or VSCode by Alfred",
   "license": "MIT",
   "repository": "gp0119/open-by-alfred",
   "type": "module",
@@ -20,7 +20,9 @@
   },
   "files": [
     "index.js",
+    "images/**",
     "icon.png",
+    "vscode.png",
     "info.plist"
   ],
   "keywords": [
