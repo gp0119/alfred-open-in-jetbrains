@@ -20,8 +20,13 @@
   },
   "files": [
     "index.js",
-    "images/**",
     "icon.png",
+    "webstorm.png",
+    "fleet.png",
+    "idea.png",
+    "goland.png",
+    "pycharm.png",
+    "phpstorm.png",
     "vscode.png",
     "info.plist"
   ],
