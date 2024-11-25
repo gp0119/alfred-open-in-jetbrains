@@ -8,6 +8,29 @@
 	<string>Uncategorised</string>
 	<key>connections</key>
 	<dict>
+		<key>clion</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E2115B7-E7BC-4E84-AD02-A4BA8D5C11F0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>fleet</key>
 		<array>
 			<dict>
@@ -35,9 +58,9 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+				<string>F98E296B-4555-46D3-A25E-C78D2F7139C7</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -45,9 +68,9 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>F98E296B-4555-46D3-A25E-C78D2F7139C7</string>
+				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -104,6 +127,29 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>855BC196-2607-4308-8CEC-41553B058464</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>rider</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
 				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
@@ -114,7 +160,30 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>855BC196-2607-4308-8CEC-41553B058464</string>
+				<string>D5F09E51-4F8B-4108-8FD3-957B9B811F82</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>rust</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C2036A32-4320-49CC-A89A-F0D37F5CCC86</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -247,21 +316,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string>~/Applications/Fleet.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>B3A6BE6A-40CC-4F3C-8691-AC76C614F3A5</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -305,6 +359,21 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>fleet</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>~/Applications/Fleet.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>B3A6BE6A-40CC-4F3C-8691-AC76C614F3A5</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -371,19 +440,6 @@
 			<string>6D1B8224-B15C-403B-8C24-168065BFD641</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -516,6 +572,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>path</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -580,6 +649,213 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string>~/Applications/RustRover.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>C2036A32-4320-49CC-A89A-F0D37F5CCC86</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:rust_keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open the project in Idea</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>rust</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>~/Applications/CLion.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>9E2115B7-E7BC-4E84-AD02-A4BA8D5C11F0</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:clion_keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open the project in Idea</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>clion</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>~/Applications/Rider.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>D5F09E51-4F8B-4108-8FD3-957B9B811F82</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:rider_keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open the project in Idea</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>rider</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>A11F5058-6C0D-4452-9D88-D0408023F216</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -626,21 +902,6 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/Applications/Visual Studio Code.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>A11F5058-6C0D-4452-9D88-D0408023F216</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -667,12 +928,19 @@
 			<key>ypos</key>
 			<real>850</real>
 		</dict>
-		<key>A11F5058-6C0D-4452-9D88-D0408023F216</key>
+		<key>9E2115B7-E7BC-4E84-AD02-A4BA8D5C11F0</key>
 		<dict>
 			<key>xpos</key>
 			<real>440</real>
 			<key>ypos</key>
-			<real>1020</real>
+			<real>1110</real>
+		</dict>
+		<key>A11F5058-6C0D-4452-9D88-D0408023F216</key>
+		<dict>
+			<key>xpos</key>
+			<real>435</real>
+			<key>ypos</key>
+			<real>1380</real>
 		</dict>
 		<key>B3A6BE6A-40CC-4F3C-8691-AC76C614F3A5</key>
 		<dict>
@@ -684,9 +952,23 @@
 		<key>B6D4A148-5F80-431A-BE73-997BDE0FDBE7</key>
 		<dict>
 			<key>xpos</key>
-			<real>1030</real>
+			<real>975</real>
 			<key>ypos</key>
-			<real>560</real>
+			<real>840</real>
+		</dict>
+		<key>C2036A32-4320-49CC-A89A-F0D37F5CCC86</key>
+		<dict>
+			<key>xpos</key>
+			<real>440</real>
+			<key>ypos</key>
+			<real>980</real>
+		</dict>
+		<key>D5F09E51-4F8B-4108-8FD3-957B9B811F82</key>
+		<dict>
+			<key>xpos</key>
+			<real>440</real>
+			<key>ypos</key>
+			<real>1245</real>
 		</dict>
 		<key>F98E296B-4555-46D3-A25E-C78D2F7139C7</key>
 		<dict>
@@ -701,6 +983,13 @@
 			<real>440</real>
 			<key>ypos</key>
 			<real>155</real>
+		</dict>
+		<key>clion</key>
+		<dict>
+			<key>xpos</key>
+			<real>80</real>
+			<key>ypos</key>
+			<real>1110</real>
 		</dict>
 		<key>fleet</key>
 		<dict>
@@ -737,12 +1026,26 @@
 			<key>ypos</key>
 			<real>705</real>
 		</dict>
+		<key>rider</key>
+		<dict>
+			<key>xpos</key>
+			<real>80</real>
+			<key>ypos</key>
+			<real>1245</real>
+		</dict>
+		<key>rust</key>
+		<dict>
+			<key>xpos</key>
+			<real>80</real>
+			<key>ypos</key>
+			<real>980</real>
+		</dict>
 		<key>vscode</key>
 		<dict>
 			<key>xpos</key>
 			<real>80</real>
 			<key>ypos</key>
-			<real>1020</real>
+			<real>1380</real>
 		</dict>
 		<key>webstorm</key>
 		<dict>
@@ -821,7 +1124,7 @@
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>fleet</string>
+				<string>fl</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -842,7 +1145,7 @@
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>idea</string>
+				<string>ij</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -884,7 +1187,7 @@
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>py</string>
+				<string>pc</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -905,7 +1208,7 @@
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>php</string>
+				<string>ps</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -943,9 +1246,70 @@
 			<key>variable</key>
 			<string>vscode_keyword</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>rr</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>RustRover keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>rust_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>cl</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>CLion keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>clion_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>rd</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Rider keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>rider_keyword</string>
+		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>

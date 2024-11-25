@@ -1,6 +1,6 @@
 {
   "name": "open-by-alfred",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Open the project in Jetbrains or VSCode by Alfred",
   "license": "MIT",
   "repository": "gp0119/open-by-alfred",
@@ -8,7 +8,7 @@
   "author": {
     "name": "ganpeng",
     "email": "190875565@qq.com",
-    "url": "github.com/gp0119/open-by-alfred"
+    "url": "https://github.com/gp0119/open-by-alfred"
   },
   "engines": {
     "node": ">=4"
@@ -27,6 +27,9 @@
     "goland.png",
     "pycharm.png",
     "phpstorm.png",
+    "rust.png",
+    "clion.png",
+    "rider.png",
     "vscode.png",
     "info.plist"
   ],
