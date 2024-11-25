@@ -256,7 +256,7 @@
 			<key>config</key>
 			<dict>
 				<key>openwith</key>
-				<string>~/Applications/IntelliJ IDEA Community Edition.app</string>
+				<string>~/Applications/IntelliJ IDEA Ultimate.app</string>
 				<key>sourcefile</key>
 				<string>{query}</string>
 			</dict>
