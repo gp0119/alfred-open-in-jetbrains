@@ -1,14 +1,14 @@
 {
-  "name": "alfred-open-in-jetbrains",
-  "version": "0.0.0",
+  "name": "open-by-alfred",
+  "version": "1.0.0",
   "description": "Open the project in Jetbrains by Alfred",
   "license": "MIT",
-  "repository": "gp0119/alfred-open-in-jetbrains",
+  "repository": "gp0119/open-by-alfred",
   "type": "module",
   "author": {
     "name": "ganpeng",
     "email": "190875565@qq.com",
-    "url": "github.com/gp0119/alfred-open-in-jetbrains"
+    "url": "github.com/gp0119/open-by-alfred"
   },
   "engines": {
     "node": ">=4"
